@@ -3,7 +3,6 @@ function getPaslon(wil='') {
         return fetch("api/getPaslon.php?wil="+wil)
         .then((res) => res.json())
         .then((data) => {
-            console.log(wil)
             let col = 12 / data.length;
             if(col <= 3) {
                 col = 3;
@@ -39,20 +38,19 @@ function getPaslon(wil='') {
                                     <thead>
                                         <tr>
                                             <th>Kecamatan</th>
-                                            <th>Suara</th>
-                                            <th>Progres</th>
+                                            <th><center>Suara</center></th>
+                                            <th><center>Progres</center></th>
                                         </tr>
                                     </thead>
                                     <tbody id="tbodyKecamatan-${pas['id']}">`;
 
 
                 pas.perwil.forEach(perwil => {
-                    console.log(perwil)
                     html += `
                         <tr>
                             <td>${perwil['nama']}</td>
-                            <td>${perwil['suara']}</td>
-                            <td></td>
+                            <td><center>${perwil['suara']}</center></td>
+                            <td><center>${perwil['progres']}%</center></td>
                         </tr>
                     `;
                 });

@@ -18,7 +18,8 @@ if(isset($_GET['wil'])) {
             $data_kec[$p][] = array(
                 'kode'=>$k['kode'],
                 'nama'=>$k['nama'],
-                'suara'=>number_format($suara['tungsura']['table'][$k['kode']][$p])
+                'suara'=>number_format($suara['tungsura']['table'][$k['kode']][$p]),
+                'progres'=>number_format($suara['tungsura']['table'][$k['kode']]['progres']['persen'])
             );
         }
 
