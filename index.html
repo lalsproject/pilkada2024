@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title id="genTitle"></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv = 'cache-control' content = 'no-cache'>
+    <meta http-equiv = 'expires' content = '0'>
+    <meta http-equiv = 'pragma' content = 'no-cache'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <meta name="msapplication-TileColor" content="#066fd1">
+    <meta name="theme-color" content="#066fd1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <link rel="icon" href="https://preview.tabler.io/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://preview.tabler.io/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Tabler comes with tons of well-designed components and features. Start your adventure with Tabler and make your dashboard great again. For free!">
+    <meta name="canonical" content="https://tabler.io/demo/">
+    <meta name="twitter:image:src" content="https://tabler.io/demo/static/og.png">
+    <meta name="twitter:site" content="@tabler_ui">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Tabler: Premium and Open Source dashboard template with responsive and high quality UI.">
+    <meta name="twitter:description" content="Tabler comes with tons of well-designed components and features. Start your adventure with Tabler and make your dashboard great again. For free!">
+    <meta property="og:image" content="https://tabler.io/demo/static/og.png">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="640">
+    <meta property="og:site_name" content="Tabler">
+    <meta property="og:type" content="object">
+    <meta property="og:title" content="Tabler: Premium and Open Source dashboard template with responsive and high quality UI.">
+    <meta property="og:url" content="https://tabler.io/demo/static/og.png">
+    <meta property="og:description" content="Tabler comes with tons of well-designed components and features. Start your adventure with Tabler and make your dashboard great again. For free!">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/css/tabler.min.css?version=1.0.0"
+    />
+    <link rel="stylesheet" href="src/style.css?version=1.0.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/js/tabler.min.js?version=1.0.0"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js?version=1.0.0"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css?version=1.0.0"
+    />
+    <script src="src/getProv.mjs" type="module"></script>
+    <script src="src/getKabKot.mjs" type="module"></script>
+    <script src="src/getPaslonGub.mjs" type="module"></script>
+    <script src="src/getPaslonWal.mjs" type="module"></script>
+    <script src="src/main.js" type="module"></script>
+    <!-- <script src="src/country.js?version=1.0.0" type="text/javascript"></script>
+    <script src="src/getMovie.js?version=1.0.0" type="text/javascript"></script>
+    <script src="src/paging.js?version=1.0.0" type="text/javascript"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js?version=1.0.0"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css?version=1.0.0"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-flags.min.css?version=1.0.0">
+    
+  </head>
+  <body class="layout-fluid" id="bodyId">
+    <div class="page">
+      <header class="navbar navbar-expand-md d-print-none">
+        <div class="container-xl">
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-brand navbar-brand-autodark pe-0 pe-md-3">
+            <a href="." style="text-decoration: none; color: var(--tblr-body-color)">
+              <img src="https://pilkada2024.kpu.go.id/assets/logo.7cbefe7d.png" width="50" alt="">
+              Data Scrape KPU
+            </a>
+          </div>
+          <div class="navbar-nav flex-row order-md-last">
+            <!-- Mode Toggle (Dark/Light) -->
+            
+            <div class="d-none d-md-flex">
+              <a
+                href="javascript:void(0)"
+                onclick="$('#bodyId').attr('data-bs-theme', 'dark');localStorage.setItem('data-bs-theme', 'dark');"
+                class="nav-link px-0 hide-theme-dark"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                aria-label="Enable dark mode"
+                data-bs-original-title="Enable dark mode"
+              >
+                <!-- Download SVG icon from http://tabler-icons.io/i/moon -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="javascript:void(0)"
+                onclick="$('#bodyId').attr('data-bs-theme', 'light');localStorage.setItem('data-bs-theme', 'light');"
+                class="nav-link px-0 hide-theme-light"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                aria-label="Enable light mode"
+                data-bs-original-title="Enable light mode"
+              >
+                <!-- Download SVG icon from http://tabler-icons.io/i/sun -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="icon"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                  <path
+                    d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+      <div class="page-wrapper">
+        <div class="page-body">
+          <div class="container-xl">
+
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+  </body>
+  
+</html>
