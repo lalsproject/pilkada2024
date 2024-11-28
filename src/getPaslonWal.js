@@ -7,12 +7,7 @@ function getPaslon(wil='',id='') {
 
         pas.forEach(kot => {
             console.log(kot);
-            // html += `<option value="${kot.kode}">${kot.nama}</option>`;
         });
-
-        // data.forEach(element => {
-        //     console.log(element)
-        // });
     })
     .catch((err) => console.error("", err));
 }

@@ -1,8 +1,8 @@
 function getAllProv() {
-    return fetch("https://sirekappilkada-obj-data.kpu.go.id/wilayah/pilkada/pkwkp/0.json")
+    return fetch("api/getProv.php")
     .then((res) => res.json())
     .then((data) => {
-        // data.json()
+        // const obj = JSON.parse(data);
         let html = '<option value="">-- Pilih</option>';
         data.forEach(prov => {
             // console.log(prov.nama)
